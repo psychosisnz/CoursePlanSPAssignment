@@ -39,7 +39,7 @@ namespace CoursePlannerSPAssignment.Controllers
         // GET: CompletedCourses/Create
         public ActionResult Create()
         {
-            ViewBag.CourseId = new SelectList(db.Courses, "CourseId", "CourseCode");
+            ViewBag.CourseId = new SelectList(db.Courses, "CourseId", "CourseName");
             ViewBag.ApplicationUserId = new SelectList(db.Students, "ApplicationUserId", "FName");
             return View();
         }

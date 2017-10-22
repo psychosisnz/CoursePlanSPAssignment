@@ -12,6 +12,8 @@ namespace CoursePlannerSPAssignment.Models
         public int CompleteId { get; set; }
 
         public virtual Course Course { get; set; }
+
+        [Display(Name ="Course")]
         public int CourseId { get; set; }
 
         [Display(Name = "Course was Passed?  ")]
