@@ -1,0 +1,58 @@
+﻿@model CoursePlannerSPAssignment.Models.CompletedCourse
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CompletedCourse</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Course.CourseCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Course.CourseCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Student.FName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student.FName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Passed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Passed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YearCompleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YearCompleted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SemesterCompleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SemesterCompleted)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CompleteId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
